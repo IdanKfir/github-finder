@@ -4,7 +4,8 @@ const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 
 const github = axios.create({
   baseURL: GITHUB_URL,
-  headers: { Authorization: `token ${GITHUB_TOKEN}` },
+  // prettier-ignore
+  headers: { "Authorization": `token ${GITHUB_TOKEN}` },
 });
 
 // Get search results
